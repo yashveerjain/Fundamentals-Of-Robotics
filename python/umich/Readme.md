@@ -16,3 +16,5 @@ For slides, lecture notes, and example codes, see https://github.com/UMich-CURLY
 4. [Homework 4 -- Localization](https://github.com/UMich-CURLY-teaching/UMich-ROB-530-public/tree/main/homework/homework-04)
     - RIEKF implementation [here](homework-04/RIEKF.ipynb)
     - Details [here](homework-04/readme.md)
+    - TODO:
+        - Fix the error in the RIEKF implementation, estimated states are unstable, not sure what is wrong.
