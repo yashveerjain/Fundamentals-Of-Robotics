@@ -15,3 +15,4 @@ For slides, lecture notes, and example codes, see https://github.com/UMich-CURLY
     - comparison of EKF and PF [here](homework-03/compare_ekf_vs_pf.ipynb)
 4. [Homework 4 -- Localization](https://github.com/UMich-CURLY-teaching/UMich-ROB-530-public/tree/main/homework/homework-04)
     - RIEKF implementation [here](homework-04/RIEKF.ipynb)
+    - Details [here](homework-04/readme.md)
