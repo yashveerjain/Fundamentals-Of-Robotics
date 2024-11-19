@@ -13,3 +13,5 @@ This Repository is for practicing SLAM, undertook different courses and implemen
 * homework 3:
     - Derived and Implemented Particle Filter and Extended Kalman Filter, for the 2D Localization problem, presented [here](python/umich/homework-03/NA568_HW3_W22.pdf)
     - More details present [here](python/umich/Readme.md)
+* homework 4:
+    - Implemented Right Invariant Extended Kalman Filter, for the 3D Localization problem, presented [here](python/umich/homework-04/NA568_HW4_W22.pdf)
