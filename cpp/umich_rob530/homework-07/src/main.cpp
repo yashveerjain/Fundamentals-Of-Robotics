@@ -105,7 +105,7 @@ int main(int argc, char* argv[]){
 
     for (auto r : gt){
         // r is a keyvalue pair
-        auto v = res.at<gtsam::Pose2>(r.key);
+        auto v = gt.at<gtsam::Pose2>(r.key);
         // cout<<r.key<<endl;
         int row = static_cast<int>(r.key); // Assuming key is convertible to int
         gtmat(row, 0) = v.x();

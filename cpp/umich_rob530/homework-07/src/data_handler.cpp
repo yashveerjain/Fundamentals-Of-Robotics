@@ -115,4 +115,5 @@ void DataHandler::saveCsvData(std::string model_path, Eigen::MatrixXd& outmat){
         ofile<<"\n";
     }
     ofile.close();
+    printf("Saving the weight with mean %f in file %s\n",outmat.mean(),model_path);
 }

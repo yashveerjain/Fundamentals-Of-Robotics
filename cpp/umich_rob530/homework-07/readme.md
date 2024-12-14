@@ -23,8 +23,9 @@ source py_env/bin/activate
 python3 -m pip install -r requirements.txt
 ```
 * Run:
+    - Will Plot the Graph with difference between GT and Estimation path. 
 ```sh
-python3 plot.py build/saved.csv
+python3 plot.py build/gt.csv build/saved.csv
 ```
 
 

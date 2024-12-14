@@ -11,7 +11,9 @@
  * The constructor will add the prior node to the factor graph and then add all the factor nodes to the graph.
  */
 CustomGraph::CustomGraph(vector<vector<double>> vertices, vector<vector<double>> edges){
-            
+
+    std::cout<<"Creating Graph...."<<std::endl;
+
     for (auto v: vertices) _initial.insert(static_cast<int>(v[0]),gtsam::Pose2(v[1],v[2],v[3]));
     // Reference for Pose2 : https://gtsam.org/doxygen/a03264.html
     
@@ -47,6 +49,7 @@ CustomGraph::CustomGraph(vector<vector<double>> vertices, vector<vector<double>>
         // add the factor nodes to the graph.
         _graph.add(gtsam::BetweenFactor<gtsam::Pose2>(pi, ci, gtsam::Pose2(x, y, theta), cov_model));
     }
+    std::cout<<"Graph Successfully Created!!!"<<std::endl;
 }
 
 /**
@@ -60,6 +63,9 @@ CustomGraph::CustomGraph(vector<vector<double>> vertices, vector<vector<double>>
  * @return The optimized values of the factor graph.
  */
 gtsam::Values CustomGraph::Optimize(){
+
+    std::cout<<"Optimizing...."<<std::endl;
+
         // 4. Optimize the initial values using a Gauss-Newton nonlinear optimizer
     // The optimizer accepts an optional set of configuration parameters,
     // controlling things like convergence criteria, the type of linear
@@ -75,7 +81,7 @@ gtsam::Values CustomGraph::Optimize(){
     // ... and optimize
     gtsam::Values result =  optimizer.optimize();
     // result.print("Final Result:\n");
-
+    std::cout<<"Optimization Completed!!!"<<std::endl;
     return result;
 }
 
