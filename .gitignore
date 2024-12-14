@@ -1,2 +1,7 @@
 **/__pycache__
 **/*.mat
+**/eigen-3.4.0/
+**/build/
+**/temp
+**/3rdparty
+**/.vscode

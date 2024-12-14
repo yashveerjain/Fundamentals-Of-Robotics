@@ -1,17 +1,72 @@
-# SLAM Practice 
-This Repository is for practicing SLAM, undertook different courses and implemented different algorithms, for SLAM on mobile robots.
+# 🚀 SLAM Practice
 
-* Implemented both on python and C++.
-* Implemented SLAM on Mobile Robots.
+This repository showcases my practice and implementations of **Simultaneous Localization and Mapping (SLAM)** algorithms for mobile robots. The work here is based on various courses and projects, implemented in both **Python** and **C++**. 
 
-## python/umich
-* Contains the howework from Umich course on Mobile Robotics.
-* homework 1:
-    - Understanding Bayes Filter
-* homework 2:
-    - Derived and Implemented Linear Estimation techniques such as, Bayesian Inference, and Kalman Filter
-* homework 3:
-    - Derived and Implemented Particle Filter and Extended Kalman Filter, for the 2D Localization problem, presented [here](python/umich/homework-03/NA568_HW3_W22.pdf)
-    - More details present [here](python/umich/Readme.md)
-* homework 4:
-    - Implemented Right Invariant Extended Kalman Filter, for the 3D Localization problem, presented [here](python/umich/homework-04/NA568_HW4_W22.pdf)
+It includes a comprehensive exploration of SLAM concepts, ranging from foundational techniques like Bayes Filters to advanced methods like Particle Filters and Right-Invariant Extended Kalman Filters. The projects aim to strengthen theoretical understanding and practical application of SLAM on mobile robotic platforms.
+
+---
+
+## 🛠️ Skills Demonstrated
+
+![Python](https://img.shields.io/badge/Python-3.8%2B-blue?logo=python&logoColor=white)
+![C++](https://img.shields.io/badge/C++-17%2B-orange?logo=c%2B%2B&logoColor=white)
+![Robotics](https://img.shields.io/badge/Robotics-SLAM-green?logo=robotframework&logoColor=white)
+![Git](https://img.shields.io/badge/Version_Control-Git-orange?logo=git&logoColor=white)
+![CMake](https://img.shields.io/badge/Build_Tool-CMake-blue?logo=cmake&logoColor=white)
+
+- **Programming Languages**: Python, C++  
+- **Algorithms**: Bayes Filter, Kalman Filter, Particle Filter, Extended Kalman Filter, Right-Invariant Extended Kalman Filter, Factor Graph Based Optimization Method  
+- **Robotics**: 2D and 3D Localization, State Estimation, Mobile Robot Navigation  
+- **Mathematical Tools**: Linear Algebra, Bayesian Inference, Probabilistic Robotics  
+- **Development Tools**: Git, CMake
+- **Libraries**: GTSAM, Eigen, Numpy, Matplotlib  
+- **Problem Solving**: Tackling real-world SLAM problems using simulation and theoretical derivations  
+
+---
+
+## 📂 Repository Overview
+
+### 🐍 Python: 
+
+This section features projects and assignments implemented in **Python** for a deeper understanding of SLAM using an object-oriented programming approach:  
+
+### 1. University of Michigan (ROB 530) Course Projects
+
+This section contains homework and projects completed as part of the **Mobile Robotics course (ROB 530)** at the University of Michigan. Each assignment dives deep into key SLAM concepts:
+
+- **Homework 1**:  
+  - 📌 Explored and implemented **Bayes Filter** for state estimation.  
+
+- **Homework 2**:  
+  - 📌 Derived and implemented linear estimation techniques, including **Bayesian Inference** and **Kalman Filter**.  
+
+- **Homework 3**:  
+  - 📌 Developed **Particle Filters** and **Extended Kalman Filters** for solving 2D localization problems.  
+  - 📄 [Assignment Details](python/umich/homework-03/NA568_HW3_W22.pdf)  
+  - 📘 Additional insights and explanations available in the [README](python/umich/Readme.md).  
+
+- **Homework 4**:  
+  - 📌 Implemented the **Right-Invariant Extended Kalman Filter (RIEKF)** for a 3D localization problem.  
+  - 📄 [Problem Statement](python/umich/homework-04/NA568_HW4_W22.pdf)  
+
+---
+
+### 💻 C++: Projects and Implementations  
+
+This section features projects and assignments implemented in **C++** for a deeper understanding of SLAM using an object-oriented programming approach:  
+
+### 1. University of Michigan (ROB 530) Course Projects
+- **Homework 7 (ROB 530)**:  
+  - 📌 Explored advanced SLAM techniques as part of Homework 7 in the Robotics course, utilitzed **Factor Graph Optimization Technique** to optimize the estimation/localization problem.
+
+---
+
+## 🌟 Explore & Collaborate
+
+Feel free to explore the code and insights shared in this repository. Contributions, feedback, and discussions are always welcome!  
+
+---
+
+### 🔖 Tags
+
+`#SLAM` `#Localization` `#Robotics` `#C++` `#Python` `#BayesFilter` `#KalmanFilter` `#ParticleFilter` `#RIEKF`
