@@ -54,7 +54,7 @@ class DataHandler{
             cout << "    [q12 q22 q23]" << endl;
             cout << "    [q13 q23 q33]" << endl;
 
-            cout << "By inverting this information matrix, you can obtain the covariance matrix for the noise model." << endl;
+            cout << "By inverting this information matrix = (Ω), you can obtain the covariance matrix = (Sqrt(Ω^-1)) for the noise model." << endl;
             cout<<"========================="<<endl;
         }
 

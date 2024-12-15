@@ -37,10 +37,20 @@ vector<double> get_values_from_line(std::string line, size_t start){
 
 int main(int argc, char* argv[]){
     string filepath="";
+    string optimisation_tech = "BO"; // Default it will be BO (Batch Optimization)
     if (argc>1){
         filepath = argv[1];
     }
     
+    if (argc>2){
+        std::string str(argv[2]);
+        if (str != "IO" && str != "BO"){
+            cout<<"Invalid optimisation technique : "<<str<<"!"<<endl;
+            return 1;
+        }
+        optimisation_tech = argv[2];
+    }
+
     DataHandler data_handler(filepath);
     
     // data_handler.print_file();
@@ -74,7 +84,16 @@ int main(int argc, char* argv[]){
 
     CustomGraph custom_graph(vertices,edges);
 
-    gtsam::Values res = custom_graph.Optimize();
+    gtsam::Values res;
+
+    if (optimisation_tech == "IO"){
+        res = custom_graph.IncrementalOptimization();
+        // return 0;
+    }
+    else {
+        res = custom_graph.BatchOptimization();
+    }
+    // gtsam::Values res = custom_graph.IncrementalOptimization();
 
 
     Eigen::MatrixXd outmat(res.size(),3);
@@ -90,12 +109,12 @@ int main(int argc, char* argv[]){
         // cout<<v.x()<<endl;
     }
 
-    std::string model_path = "saved.bin";
-    std::string csv_path = "saved.csv";
+    std::string csv_path = optimisation_tech + "saved.csv";
 
-    data_handler.saveBinaryData(model_path, outmat);
-    
-    data_handler.loadBinaryData(model_path);
+    // Binary data is more efficient memory and time wise, but difficult to import in python
+    // std::string model_path = "saved.bin";
+    // data_handler.saveBinaryData(model_path, outmat);
+    // data_handler.loadBinaryData(model_path);
 
     data_handler.saveCsvData(csv_path, outmat);
 

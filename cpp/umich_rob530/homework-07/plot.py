@@ -43,5 +43,5 @@ gt_Y = gt_data.iloc[:,1].values
 plt.plot(est_Y,est_X,"r-",label="EST")
 plt.plot(gt_Y,gt_X,"b--",label="GT")
 plt.legend()
-# plt.savefig("plot.png")
+plt.savefig("plot.png")
 plt.show()
