@@ -27,7 +27,20 @@ python3 -m pip install -r requirements.txt
 ```sh
 python3 plot.py build/gt.csv build/saved.csv
 ```
+## Noted and TODO:
+* **Notes**: 
+    - BatchOptimization is working and able to plot the graph.
+    - IncrementalOptimization is not working, the optimization is going out of bound and resulting in degenerate solution, so deteminent is 0, causing it to fail.
+    - Input dataset the information vector [q11,q12,q13,q22,q23,q33] is upper triangle matrix (I), and since information matrix we need to convert it to covariance matrix(C), for noise modelling.
+        - $C = \sqrt{I^{-1}}$
 
+## Results:
+* The results of the project are as follows:
+### **Batch Optimization**:
+![](assets/BOPlot.png)
+
+### **Incremental Optimization (ISAM)**:
+![](assets/IOPlot.png)
 
 ## Dependencies
 This project requires the following dependencies:

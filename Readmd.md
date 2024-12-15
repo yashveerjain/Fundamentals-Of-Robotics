@@ -34,20 +34,20 @@ This section features projects and assignments implemented in **Python** for a d
 
 This section contains homework and projects completed as part of the **Mobile Robotics course (ROB 530)** at the University of Michigan. Each assignment dives deep into key SLAM concepts:
 
-- **Homework 1**:  
+- [**Homework 1**](python/umich_rob530/homework-01):  
   - 📌 Explored and implemented **Bayes Filter** for state estimation.  
 
-- **Homework 2**:  
+- [**Homework 2**](python/umich_rob530/homework-02):  
   - 📌 Derived and implemented linear estimation techniques, including **Bayesian Inference** and **Kalman Filter**.  
 
-- **Homework 3**:  
+- [**Homework 3**](python/umich_rob530/homework-03):  
   - 📌 Developed **Particle Filters** and **Extended Kalman Filters** for solving 2D localization problems.  
   - 📄 [Assignment Details](python/umich/homework-03/NA568_HW3_W22.pdf)  
-  - 📘 Additional insights and explanations available in the [README](python/umich/Readme.md).  
+  - 📘 Additional insights and explanations available in the [README](python/umich_rob530/readme.md).  
 
-- **Homework 4**:  
+- [**Homework 4**](python/umich_rob530/homework-04):  
   - 📌 Implemented the **Right-Invariant Extended Kalman Filter (RIEKF)** for a 3D localization problem.  
-  - 📄 [Problem Statement](python/umich/homework-04/NA568_HW4_W22.pdf)  
+  - 📄 [Problem Statement](python/umich_rob530/homework-04/NA568_HW4_W22.pdf)  
 
 ---
 
@@ -56,7 +56,7 @@ This section contains homework and projects completed as part of the **Mobile Ro
 This section features projects and assignments implemented in **C++** for a deeper understanding of SLAM using an object-oriented programming approach:  
 
 ### 1. University of Michigan (ROB 530) Course Projects
-- **Homework 7 (ROB 530)**:  
+- [**Homework 7 (ROB 530)**](cpp/umich_rob530/homework-07):  
   - 📌 Explored advanced SLAM techniques as part of Homework 7 in the Robotics course, utilitzed **Factor Graph Optimization Technique** to optimize the estimation/localization problem.
 
 ---
