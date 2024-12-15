@@ -40,7 +40,7 @@ python3 plot.py build/gt.csv build/saved.csv
 ![](assets/BOPlot.png)
 
 ### **Incremental Optimization (ISAM)**:
-![](assets/IOPlot.png)
+![](assets/IOplot.png)
 
 ## Dependencies
 This project requires the following dependencies:
