@@ -59,6 +59,10 @@ This section features projects and assignments implemented in **C++** for a deep
 - [**Homework 7 (ROB 530)**](cpp/umich_rob530/homework-07):  
   - 📌 Explored advanced SLAM techniques as part of Homework 7 in the Robotics course, utilitzed **Factor Graph Optimization Technique** to optimize the estimation/localization problem.
 
+## 2. MPC Controller for simple Linear System
+  - [**MPC**](cpp/control/mpc):  
+  - 📌 Implemented a **MPC Controller** for a simple Linear System to control the system.
+    
 ---
 
 ## 🌟 Explore & Collaborate
