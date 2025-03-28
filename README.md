@@ -58,6 +58,7 @@ This section features projects and assignments implemented in **C++** for a deep
 ### 1. University of Michigan (ROB 530) Course Projects
 - [**Homework 7 (ROB 530)**](cpp/umich_rob530/homework-07):  
   - 📌 Explored advanced SLAM techniques as part of Homework 7 in the Robotics course, utilitzed **Factor Graph Optimization Technique** to optimize the estimation/localization problem.
+  -  Uses GTSAM - Batch Optimization and Increcment SAM method to get the localization and mapping correct.
 
 ## 2. MPC Controller for simple Linear System
   - [**MPC**](cpp/control/mpc):  
